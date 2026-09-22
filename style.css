@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* Background */
+
+.background {
+    position: fixed;
+    inset: -30px;
+
+    background-image:
+        url("https://unej.ac.id/wp-content/uploads/2024/09/bgheaderunej2024.webp");
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(9px);
+    transform: scale(1.05);
+
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 30, 37, 0.48),
+            rgba(0, 0, 0, 0.15)
+        );
+
+    z-index: -1;
+}
+
+
+/* Main */
+
+.main-container {
+    width: calc(100% - 295px);
+    min-height: 100vh;
+
+    padding: 28px 16px 20px 16px;
+
+    position: relative;
+}
+
+
+/* Logo Unej */
+
+.unej-logo {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0;
+}
+
+.unej-logo img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+
+/* Grid Menu */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 8px 11px;
+
+    align-items: start;
+}
+
+
+/* Card Menu */
+
+.menu-card {
+    height: 103px;
+
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+    color: white;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.12);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.menu-card span {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Icon */
+
+.icon img{
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    line-height: 1;
+}
+
+
+
+/* Warna Cards */
+
+.merah {
+    background: #8d0505;
+}
+
+.orange {
+    background: #f1320f;
+}
+
+.ungu {
+    background: #5b3abb;
+}
+
+.hijau {
+    background: #198858;
+}
+
+.pink {
+    background: #e36bdd;
+}
+
+.kuning {
+    background: #d3c200;
+}
+
+
+/* Footer */
+
+.footer-links {
+    position: fixed;
+
+    left: calc((100% - 295px) / 2);
+
+    bottom: 18px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 5px;
+}
+
+.footer-links a {
+    background: rgba(48, 72, 68, 0.7);
+
+    padding: 5px 10px;
+
+    border-radius: 3px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 7px;
+}
+
+.footer-links a:hover {
+    background: rgba(40, 40, 40, 0.85);
+}
+
+
+/* Sidebar Profil */
+
+.profile {
+    position: fixed;
+
+    top: 27px;
+    right: 22px;
+
+    width: 250px;
+    height: calc(100vh - 54px);
+
+    padding: 18px 20px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(42, 51, 122, 0.82),
+            rgba(4, 22, 48, 0.87)
+        );
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+
+    z-index: 10;
+}
+
+
+/* Header Profil */
+
+.profile-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.profile-header h3 {
+    font-size: 13px;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 14px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 12px;
+}
+
+
+/* Foto Profil */
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 13px;
+}
+
+.profile-picture img {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+
+/* Nama Profil */
+
+.profile > h2 {
+    text-align: center;
+
+    font-size: 10px;
+    line-height: 1.4;
+
+    margin-bottom: 6px;
+}
+
+.status {
+    width: max-content;
+
+    margin: auto;
+
+    padding: 3px 7px;
+
+    border-radius: 3px;
+
+    background: #36ce70;
+
+    font-size: 7px;
+    font-weight: bold;
+}
+
+
+/* Informasi Profil */
+
+.profile-info {
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.info-box {
+    min-height: 41px;
+
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    border-radius: 4px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.info-icon {
+    width: 18px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.info-box small {
+    display: block;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    margin-bottom: 2px;
+}
+
+.info-box p {
+    font-size: 7px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    white-space: nowrap;
+}
+
+
+/* Logout */
+
+.logout {
+    position: absolute;
+
+    bottom: 31px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: none;
+
+    padding: 7px 14px;
+
+    border-radius: 4px;
+
+    background: #ff3b70;
+
+    color: white;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.logout:hover {
+    background: #ff174f;
+    transform: translateX(-50%) scale(1.05);
+}
+
+
+/* Responsif */
+
+@media (max-width: 1200px) {
+
+    .main-container {
+        width: calc(100% - 270px);
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .profile {
+        width: 230px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+    .main-container {
+        width: 100%;
+
+        padding: 20px 15px 100px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        width: calc(100% - 30px);
+        height: 500px;
+
+        margin: 20px auto;
+    }
+
+    .footer-links {
+        position: static;
+
+        transform: none;
+
+        justify-content: center;
+
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-card {
+        height: 100px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
