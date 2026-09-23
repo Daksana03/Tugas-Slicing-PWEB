@@ -1,8 +1,8 @@
-# 🌐 Portal Layanan Universitas Jember
+🌐 Portal Layanan Universitas Jember
 
 Website ini merupakan hasil **slicing desain website dashboard/portal layanan** menggunakan HTML, CSS, dan JavaScript. Website dibuat dengan tampilan yang menyerupai portal layanan digital Universitas Jember, dilengkapi dengan menu layanan, informasi profil pengguna, serta beberapa interaksi menggunakan JavaScript DOM.
 
-## 📸 Preview
+📸 Preview
 
 1. Tampilan di Dekstop
 
@@ -12,7 +12,7 @@ Website ini merupakan hasil **slicing desain website dashboard/portal layanan** 
 
 ---
 
-## ✨ Fitur
+✨ Fitur
 
 * 🏠 Dashboard portal layanan
 * 👤 Informasi profil pengguna
@@ -27,7 +27,7 @@ Website ini merupakan hasil **slicing desain website dashboard/portal layanan** 
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+🛠️ Teknologi yang Digunakan
 
 Website ini dibuat menggunakan teknologi dasar web tanpa menggunakan framework CSS seperti Bootstrap atau Tailwind.
 
@@ -37,7 +37,7 @@ Website ini dibuat menggunakan teknologi dasar web tanpa menggunakan framework C
 
 ---
 
-## 📁 Struktur Folder
+📁 Struktur Folder
 
 
 Tugas Slicing/
@@ -53,24 +53,24 @@ Tugas Slicing/
 
 ---
 
-## 💻 Cara Menjalankan
+💻 Cara Menjalankan
 
 Karena website dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework, website dapat dijalankan secara langsung melalui browser.
 
 
-## 📱 Responsive Design
+📱 Responsive Design
 
 Website dibuat agar dapat menyesuaikan ukuran layar yang berbeda.
 
-### 🖥️ Desktop
+🖥️ Desktop
 
 Pada ukuran desktop, dashboard menampilkan area utama dan panel profil di sisi kanan.
 
-### 💻 Tablet
+💻 Tablet
 
 Layout akan menyesuaikan ukuran layar dengan mengurangi jumlah kolom menu.
 
-### 📱 Mobile
+📱 Mobile
 
 Pada ukuran layar yang lebih kecil, panel profil dan menu akan menyesuaikan posisi serta ukuran agar tetap dapat digunakan dengan nyaman.
 
@@ -78,7 +78,7 @@ Responsive design dibuat menggunakan **CSS Media Query** tanpa framework tambaha
 
 ---
 
-## ⚙️ JavaScript & DOM
+⚙️ JavaScript & DOM
 
 JavaScript digunakan untuk memberikan interaksi pada elemen website.
 
@@ -92,7 +92,7 @@ Beberapa implementasi JavaScript antara lain:
 
 ---
 
-## 🎨 CSS
+🎨 CSS
 
 CSS digunakan untuk mengatur:
 
@@ -107,7 +107,7 @@ CSS digunakan untuk mengatur:
 
 ---
 
-## 🔗 Deployment
+🔗 Deployment
 
 Website telah di-deploy menggunakan:
 
@@ -122,7 +122,7 @@ https://nama-project.netlify.app
 
 ---
 
-## 📚 Tujuan Pembuatan
+📚 Tujuan Pembuatan
 
 Project ini dibuat sebagai bagian dari tugas **Slicing Website HTML/CSS/JS**, dengan tujuan untuk menerapkan:
 
@@ -134,7 +134,7 @@ Project ini dibuat sebagai bagian dari tugas **Slicing Website HTML/CSS/JS**, de
 
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
 
 **Dyo Anggara Daksana Prayugo**
 
@@ -144,6 +144,6 @@ Universitas Jember
 
 ---
 
-## 📄 License
+📄 License
 
 Project ini dibuat untuk keperluan pembelajaran dan tugas perkuliahan.
