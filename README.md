@@ -116,16 +116,10 @@ CSS digunakan untuk mengatur:
 
 🔗 Deployment
 
-Website telah di-deploy menggunakan:
+Website telah di-deploy menggunakan: Netlify
 
-**Deployment:**
-`MASUKKAN LINK DEPLOYMENT DI SINI`
+**Deployment: https://siakadkw.netlify.app**
 
-Contoh:
-
-```text
-https://nama-project.netlify.app
-```
 
 ---
 
